@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join SpinVault and contact the team.">
+  <title>SpinVault | Join</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>SpinVault<small>DJ Record Pool</small></span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="charts.html">Charts</a></li>
+          <li><a href="crates.html">Crates</a></li>
+          <li><a href="remixes.html">Remixes</a></li>
+          <li><a class="active" href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Join SpinVault</p>
+        <h1>Choose a plan and stay connected.</h1>
+        <p>This page combines a pricing section with a contact form, giving the project a realistic membership flow and satisfying the form requirement for the final website.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container plans-grid">
+        <article class="membership-card">
+          <h2>Starter</h2>
+          <p class="price">$9<span class="muted">/month</span></p>
+          <ul class="feature-list">
+            <li>Weekly chart previews</li>
+            <li>Basic genre browsing</li>
+            <li>Limited remixes access</li>
+          </ul>
+        </article>
+        <article class="membership-card featured">
+          <h2>Pro DJ</h2>
+          <p class="price">$19<span class="muted">/month</span></p>
+          <ul class="feature-list">
+            <li>Unlimited library access</li>
+            <li>Remixes, edits, and crates</li>
+            <li>Priority release notifications</li>
+          </ul>
+        </article>
+        <article class="membership-card">
+          <h2>Venue Team</h2>
+          <p class="price">$39<span class="muted">/month</span></p>
+          <ul class="feature-list">
+            <li>Shared crates for staff</li>
+            <li>Multiple user profiles</li>
+            <li>Priority support and curation</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container join-grid">
+        <article class="card">
+          <h2>Create your account</h2>
+          <form action="#" method="post">
+            <div class="two-col">
+              <div>
+                <label for="first-name">First name</label>
+                <input id="first-name" name="first-name" type="text" autocomplete="given-name" required>
+              </div>
+              <div>
+                <label for="last-name">Last name</label>
+                <input id="last-name" name="last-name" type="text" autocomplete="family-name" required>
+              </div>
+            </div>
+            <div>
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" required>
+            </div>
+            <div>
+              <label for="dj-name">DJ name</label>
+              <input id="dj-name" name="dj-name" type="text" autocomplete="nickname">
+            </div>
+            <div>
+              <label for="plan">Membership plan</label>
+              <select id="plan" name="plan" autocomplete="off">
+                <option>Starter</option>
+                <option>Pro DJ</option>
+                <option>Venue Team</option>
+              </select>
+            </div>
+            <div>
+              <label for="genre">Favorite genre</label>
+              <select id="genre" name="genre" autocomplete="off">
+                <option>Afrobeats</option>
+                <option>Amapiano</option>
+                <option>Hip-Hop</option>
+                <option>R&amp;B</option>
+                <option>Dancehall</option>
+                <option>Open Format</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" autocomplete="on" placeholder="Tell us what kind of music you want more of."></textarea>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Join SpinVault">
+          </form>
+        </article>
+        <article class="card">
+          <h2>Why DJs would sign up</h2>
+          <ul class="feature-list">
+            <li>Less time digging for music</li>
+            <li>Cleaner prep for events and clubs</li>
+            <li>Access to remixes and edits</li>
+            <li>Curated crates by real use case</li>
+            <li>More confidence heading into every set</li>
+          </ul>
+          <p class="notice">This is a front-end concept. The form is included to demonstrate HTML form controls and design.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>SpinVault<small>DJ Record Pool</small></span></a>
+        <p class="notice">Use this page to demonstrate form controls and layout design.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul class="footer-links">
+          <li><a href="library.html">Library</a></li>
+          <li><a href="charts.html">Charts</a></li>
+          <li><a href="crates.html">Crates</a></li>
+          <li><a href="remixes.html">Remixes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright"><p>&copy; 2026 SpinVault. Designed for educational use.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

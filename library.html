@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the SpinVault track library by genre, BPM, and version.">
+  <title>SpinVault | Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>SpinVault<small>DJ Record Pool</small></span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="library.html">Library</a></li>
+          <li><a href="charts.html">Charts</a></li>
+          <li><a href="crates.html">Crates</a></li>
+          <li><a href="remixes.html">Remixes</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Library</p>
+        <h1>Discover tracks by genre, BPM, and version.</h1>
+        <p>SpinVault’s searchable library helps DJs move faster with organized records, clean edits, intro versions, and club-ready remixes built for real performance use.</p>
+
+        <div class="filter-bar card" aria-label="Track filters">
+          <div>
+            <label for="trackSearch">Search tracks</label>
+            <input id="trackSearch" type="search" placeholder="Search by title, artist, or keyword" autocomplete="off">
+          </div>
+          <div>
+            <label for="genreFilter">Genre</label>
+            <select id="genreFilter">
+              <option value="all">All genres</option>
+              <option value="afrobeats">Afrobeats</option>
+              <option value="amapiano">Amapiano</option>
+              <option value="dancehall">Dancehall</option>
+              <option value="rnb">R&amp;B</option>
+              <option value="hiphop">Hip-Hop</option>
+            </select>
+          </div>
+          <div>
+            <label for="versionFilter">Version</label>
+            <select id="versionFilter">
+              <option value="all">All versions</option>
+              <option value="clean">Clean</option>
+              <option value="dirty">Dirty</option>
+            </select>
+          </div>
+          <div>
+            <label for="bpmFilter">BPM</label>
+            <select id="bpmFilter">
+              <option value="all">All BPM ranges</option>
+              <option value="under100">Under 100</option>
+              <option value="100to110">100 to 110</option>
+              <option value="111plus">111 and up</option>
+            </select>
+          </div>
+          <div class="filter-actions">
+            <button id="clearFilters" class="btn btn-secondary" type="button">Clear All</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="table-wrap content-visibility">
+          <table>
+            <caption>Featured library records</caption>
+            <thead>
+              <tr>
+                <th>Track</th>
+                <th>Artist</th>
+                <th>Genre</th>
+                <th>BPM</th>
+                <th>Version</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-track-row data-search="last last extended intro burna boy afrobeats" data-genre="afrobeats" data-bpm="108" data-version="clean">
+                <td><strong>Last Last Extended Intro</strong></td>
+                <td>Burna Boy</td>
+                <td>Afrobeats</td>
+                <td>108</td>
+                <td>Clean</td>
+                <td><a href="join.html">Download</a></td>
+              </tr>
+              <tr data-track-row data-search="water club rework tyla amapiano" data-genre="amapiano" data-bpm="115" data-version="clean">
+                <td><strong>Water Club Rework</strong></td>
+                <td>Tyla</td>
+                <td>Amapiano</td>
+                <td>115</td>
+                <td>Clean</td>
+                <td><a href="join.html">Download</a></td>
+              </tr>
+              <tr data-track-row data-search="turn me on bashment edit kevin lyttle dancehall" data-genre="dancehall" data-bpm="102" data-version="dirty">
+                <td><strong>Turn Me On Bashment Edit</strong></td>
+                <td>Kevin Lyttle</td>
+                <td>Dancehall</td>
+                <td>102</td>
+                <td>Dirty</td>
+                <td><a href="join.html">Download</a></td>
+              </tr>
+              <tr data-track-row data-search="essence sunset remix wizkid tems afrobeats" data-genre="afrobeats" data-bpm="103" data-version="clean">
+                <td><strong>Essence Sunset Remix</strong></td>
+                <td>Wizkid ft. Tems</td>
+                <td>Afrobeats</td>
+                <td>103</td>
+                <td>Clean</td>
+                <td><a href="join.html">Download</a></td>
+              </tr>
+              <tr data-track-row data-search="snooze rooftop edit sza rnb" data-genre="rnb" data-bpm="97" data-version="clean">
+                <td><strong>Snooze Rooftop Edit</strong></td>
+                <td>SZA</td>
+                <td>R&amp;B</td>
+                <td>97</td>
+                <td>Clean</td>
+                <td><a href="join.html">Download</a></td>
+              </tr>
+              <tr data-track-row data-search="fein festival flip travis scott hip hop" data-genre="hiphop" data-bpm="75" data-version="dirty">
+                <td><strong>FE!N Festival Flip</strong></td>
+                <td>Travis Scott</td>
+                <td>Hip-Hop</td>
+                <td>75</td>
+                <td>Dirty</td>
+                <td><a href="join.html">Download</a></td>
+              </tr>
+              <tr data-track-row data-search="mnike party starter edit amapiano tyla" data-genre="amapiano" data-bpm="113" data-version="clean">
+                <td><strong>Mnike Party Starter Edit</strong></td>
+                <td>Tyler ICU &amp; Tumelo.za</td>
+                <td>Amapiano</td>
+                <td>113</td>
+                <td>Clean</td>
+                <td><a href="join.html">Download</a></td>
+              </tr>
+              <tr data-track-row data-search="calm down club flip rema afrobeats" data-genre="afrobeats" data-bpm="107" data-version="dirty">
+                <td><strong>Calm Down Club Flip</strong></td>
+                <td>Rema</td>
+                <td>Afrobeats</td>
+                <td>107</td>
+                <td>Dirty</td>
+                <td><a href="join.html">Download</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>SpinVault<small>DJ Record Pool</small></span></a>
+        <p class="notice">Built as a responsive educational website concept.</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+          <li><a href="charts.html">Charts</a></li>
+          <li><a href="crates.html">Crates</a></li>
+          <li><a href="remixes.html">Remixes</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright"><p>&copy; 2026 SpinVault. Designed for educational use.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
